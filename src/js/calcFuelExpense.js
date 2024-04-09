@@ -6,6 +6,9 @@ function calcFuelExpense (fuelType, kilometerPerLitre, kilometers) {
     case 'gasoline':
       var fuelPrice = 5.17;
       break;
+    case 'diesel':
+      var fuelPrice = 5.92;
+      break;
     default:
       console.log('Fuel type invalid.');
   }
@@ -18,4 +21,4 @@ function calcFuelExpense (fuelType, kilometerPerLitre, kilometers) {
   return totalSpent.toFixed(2)
 }
 
-calcFuelExpense('ethanol', 12, 150)
+calcFuelExpense('diesel', 12, 150)
